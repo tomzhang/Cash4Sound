@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class index{
+public class Cash4Sound{
     public static void main(String[] args){
         String yes = "Y";
         Scanner input = new Scanner(System.in);
@@ -9,9 +9,13 @@ public class index{
         String login = input.nextLine();
         while(login == yes){
             System.out.print("Please enter your email address.");
-            String email = input.next();
+            String email = input.nextLine();
             System.out.println("Please enter your password.");
+            String userPassword = input.nextLine();
             //Load UI 
+            //if(userPassword == dbPassword){
+              //  System.out.println("Welcome back!");
+            //}
             
             }
             System.out.println("Please enter your first name:");
@@ -24,10 +28,18 @@ public class index{
             String password = input.nextLine();
             System.out.println("Confirm your password: ");
             String password2 = input.nextLine();
-            while(password != password2){
-                System.out.println("Your password didn't match. Please re-confirm your password: ");
-                String reconfirm = input.nextLine();
-            }
+            
+            String userData = first + " " + last + "\n" + email + "\n" + password2;
+            //if(password == password2){
+                System.out.println("\n" + userData);
+            // }
+            // else{
+            //     System.out.println("Your password didn't match. Please re-confirm your password: ");
+            //     String reconfirm = input.nextLine();
+            //     String userData2 = first + "" + "" + last + "" + email + "" + reconfirm;
+            //     System.out.println(userData2);
+            
+            // }
 
         }
     }
